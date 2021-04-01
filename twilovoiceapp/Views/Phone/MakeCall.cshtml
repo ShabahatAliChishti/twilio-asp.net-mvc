@@ -1,0 +1,22 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>MakeCall</title>
+</head>
+<body>
+    @using (Html.BeginForm("MakeCall", "Phone", FormMethod.Post))
+    {
+        <div>
+            Enter a number: @Html.TextBox("number")
+            <button type="submit">Make Call</button>
+        </div>
+    }
+</body>
+</html>
